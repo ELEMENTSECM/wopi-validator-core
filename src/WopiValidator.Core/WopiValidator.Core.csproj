@@ -4,10 +4,11 @@
     <AssemblyName>Microsoft.Office.WopiValidator.Core</AssemblyName>
     <RootNamespace>Microsoft.Office.WopiValidator.Core</RootNamespace>
   </PropertyGroup>
-
+  
   <PropertyGroup>
-    <IsPackable>false</IsPackable>
-    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <IncludeSource>true</IncludeSource>
+    <IncludeSymbols>true</IncludeSymbols>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|netstandard2.0|AnyCPU'">
