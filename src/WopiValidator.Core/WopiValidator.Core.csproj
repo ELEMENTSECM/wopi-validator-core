@@ -1,23 +1,29 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFrameworks>net6.0</TargetFrameworks>
-    <SignAssembly>true</SignAssembly>
-    <AssemblyOriginatorKeyFile>../WopiValidatorSigningKey.snk</AssemblyOriginatorKeyFile>
-    <DelaySign>false</DelaySign>
+    <TargetFrameworks>netstandard2.0</TargetFrameworks>
     <AssemblyName>Microsoft.Office.WopiValidator.Core</AssemblyName>
     <RootNamespace>Microsoft.Office.WopiValidator.Core</RootNamespace>
   </PropertyGroup>
 
   <PropertyGroup>
-    <IsPackable>false</IsPackable>
-    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+    <Company>Sikri AS</Company>
+    <Version>1.1.0</Version>
+    <Description>Elements Microsoft Office WopiValidator</Description>
+    <Copyright>Copyright © Sikri AS © 2018-2022</Copyright>
+    <PackageId>Elements.Microsoft.Office.WopiValidator.Core</PackageId>
+  </PropertyGroup>
+  
+  <PropertyGroup>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <IncludeSource>true</IncludeSource>
+    <IncludeSymbols>true</IncludeSymbols>
   </PropertyGroup>
 
-  <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|net6.0|AnyCPU'">
+  <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|netstandard2.0|AnyCPU'">
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
   </PropertyGroup>
 
-  <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net6.0|AnyCPU'">
+  <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|netstandard2.0|AnyCPU'">
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
   </PropertyGroup>
 
